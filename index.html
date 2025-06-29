@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CI/CD Static Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Static Website</h1>
+    <p>Deployed automatically using GitHub Actions and Netlify</p>
+  </header>
+  <main>
+    <section>
+      <h2>Why CI/CD?</h2>
+      <ul>
+        <li>✅ Automates deployment</li>
+        <li>✅ Reduces manual errors</li>
+        <li>✅ Fast feedback from changes</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Tech Stack</h2>
+      <p>This site uses:</p>
+      <ul>
+        <li>HTML & CSS for structure and styling</li>
+        <li>GitHub Actions for automation</li>
+        <li>Netlify for hosting</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Latest Features</h2>
+      <p>This site was last updated on <strong id="update-date"></strong></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 My Static CI/CD Site</p>
+  </footer>
+  <script>
+    document.getElementById('update-date').textContent = new Date().toDateString();
+  </script>
+</body>
+</html>
